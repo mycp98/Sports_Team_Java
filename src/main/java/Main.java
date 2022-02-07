@@ -1,9 +1,11 @@
-import POJOs.Player;
+import managers.Manager;
+import players.Player;
+import teams.Team;
 
 public class Main {
     public static void main(String[] args) {
         Player player = new Player("Finn Russell", "Fly Half", 10, 10);
-        Player player2 = new Player("Finn Russell", "Fly Half", 10, 10);
+//        Player player2 = new Player("Finn Russell", "Fly Half", 10, 10);
 
 //        System.out.println(player == player2);   //false because they are NOT the same object
 //
@@ -11,5 +13,10 @@ public class Main {
 //        System.out.println(player2.hashCode());
 //
 //        System.out.println(player.equals(player2));   //.equals : have they actually got the same stuff in them                                                           (got the same value) ---> true
+
+
+        Manager manager = new Manager("Gregor Townsend");
+
+       // Team scotland = new Team("scotland", "Greg");
     }
 }

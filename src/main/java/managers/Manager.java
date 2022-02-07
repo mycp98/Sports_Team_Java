@@ -1,4 +1,4 @@
-package POJOs;
+package managers;
 
 import java.util.Objects;
 
@@ -9,7 +9,7 @@ public class Manager {
     public Manager(String name){
         this.name = name;
     }
-    //default constructor
+    //default constructor  -- can just create a Manager object that has no properties
     public Manager(){
 
     }
