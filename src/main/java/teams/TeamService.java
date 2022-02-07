@@ -18,7 +18,7 @@ public class TeamService {
     public int countEmptySpacesOnTeam(Team team){
         //counter/temporary variable to store count
         int count = 0;
-        //loop through players array and count nulls
+        //loop through players array and count nulls   METHOD1
         for(Player player : team.getPlayers()){
             //if statement
             //if player is null, add one to count
@@ -29,5 +29,20 @@ public class TeamService {
         }
         //return count
         return count;
+//          METHOD2 ---also works to count no.spaces
+//        Player[] playersOnTheTeam = team.getPlayers();
+
+//        for(int i=0; i<playersOnTheTeam.length; i++){
+//            if(playersOnTheTeam[i] == null){
+//                count++;
+//            }
+//        }
+//        return count;
     }
+
+    //Method: add player to the team
+
+
+
+
 }

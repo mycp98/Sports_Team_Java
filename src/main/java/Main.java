@@ -31,7 +31,7 @@ public class Main {
         //Make an instance:
         TeamService teamService = new TeamService();
 
-        int spaces = teamService.countEmptySpacesOnTeam(scotland);
+        int spaces = teamService.countEmptySpacesOnTeam(scotland);   //method requires to pass it a team
         System.out.println(spaces);
     }
 }
