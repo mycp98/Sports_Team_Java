@@ -66,7 +66,7 @@ public class Player {
         return number == player.number && contractLength == player.contractLength && Objects.equals(name, player.name) && Objects.equals(position, player.position);
     }
 
-    @Override
+    @Override    //generates number
     public int hashCode() {
         return Objects.hash(name, position, number, contractLength);
     }
