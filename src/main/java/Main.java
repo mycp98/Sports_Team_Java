@@ -1,6 +1,7 @@
 import managers.Manager;
 import players.Player;
 import teams.Team;
+import teams.TeamService;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +18,20 @@ public class Main {
 
         Manager manager = new Manager("Gregor Townsend");
 
-       // Team scotland = new Team("scotland", "Greg");
+        Team scotland = new Team("Scotland", manager);
+
+        Manager manager2 = new Manager("Eddie Jones");
+
+        Team england = new Team("England", manager2);
+
+//        System.out.println(scotland);
+//        System.out.println(scotland.toString());
+//        System.out.println(england.toString());
+
+        //Make an instance:
+        TeamService teamService = new TeamService();
+
+        int spaces = teamService.countEmptySpacesOnTeam(scotland);
+        System.out.println(spaces);
     }
 }
