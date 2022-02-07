@@ -15,7 +15,7 @@ public class TeamService {
     //Method: count empty spaces on team
     //return int
     //parameters: Team
-    public int countEmptySpacesOnTeam(Team team){
+    public int countEmptySpacesOnTeam(Team team){    //<------make test for this method
         //counter/temporary variable to store count
         int count = 0;
         //loop through players array and count nulls   METHOD1
