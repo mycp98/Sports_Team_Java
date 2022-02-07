@@ -41,6 +41,28 @@ public class TeamService {
     }
 
     //Method: add player to the team
+    //don't need to return anything ---> use void
+    public void addPlayerToTeam(Team team, Player player){
+        //Check if there's an empty space
+        int spaces = countEmptySpacesOnTeam(team);
+        //if there is an empty space, add the player
+        if (spaces>0){
+            //get players array from team
+            Player[] players = team.getPlayers();
+
+            //add player to first available empty space
+            //loop through players array
+            for(int i = 0; i<players.length; i++){
+                //if we find an empty space, add the player to it then break
+                if(players[i] == null){
+                    players[i] = player;
+                    break;
+                }
+            }
+
+
+        }
+    }
 
 
 

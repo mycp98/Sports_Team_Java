@@ -28,10 +28,15 @@ public class Main {
 //        System.out.println(scotland.toString());
 //        System.out.println(england.toString());
 
-        //Make an instance:
+        //Make an instance/object for TeamService:
         TeamService teamService = new TeamService();
 
-        int spaces = teamService.countEmptySpacesOnTeam(scotland);   //method requires to pass it a team
-        System.out.println(spaces);
+        int spacesBefore = teamService.countEmptySpacesOnTeam(scotland);   //method requires to pass it a team
+        System.out.println(spacesBefore);
+
+        teamService.addPlayerToTeam(scotland, player);
+
+        int spacesAfter = teamService.countEmptySpacesOnTeam(scotland);
+        System.out.println(spacesAfter);
     }
 }
