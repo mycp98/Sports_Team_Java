@@ -34,7 +34,12 @@ public class Main {
         int spacesBefore = teamService.countEmptySpacesOnTeam(scotland);   //method requires to pass it a team
         System.out.println(spacesBefore);
 
-        teamService.addPlayerToTeam(scotland, player);
+
+        try {
+            teamService.addPlayerToTeam(scotland, player);
+        } catch (Exception e){
+            System.out.println("team is full");
+        }
 
         int spacesAfter = teamService.countEmptySpacesOnTeam(scotland);
         System.out.println(spacesAfter);

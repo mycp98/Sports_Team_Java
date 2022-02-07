@@ -42,7 +42,7 @@ public class TeamService {
 
     //Method: add player to the team
     //don't need to return anything ---> use void
-    public void addPlayerToTeam(Team team, Player player){
+    public void addPlayerToTeam(Team team, Player player) throws Exception {
         //Check if there's an empty space
         int spaces = countEmptySpacesOnTeam(team);
         //if there is an empty space, add the player
@@ -61,6 +61,9 @@ public class TeamService {
             }
 
 
+        }
+        else{
+            throw new Exception();
         }
     }
 
